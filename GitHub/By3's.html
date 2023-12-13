@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="By3's.css">
+    <title>Record Management</title>
+    <a href="Portfolio.html">Home Page</a>
+</head>
+<body>
+    
+    <div id="recordForm">
+        <h2>Record Form</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="course">Course:</label>
+            <input type="text" id="course">
+        </div>
+        <div>
+            <label for="section">Section:</label>
+            <input type="text" id="section">
+        </div>
+        <button onclick="saveRecord()">Save Record</button>
+    </div>
+
+    <div id="recordTable">
+        <h2>Record Table</h2>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Section</th>
+                    
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="By3's.js"></script>
+</body>
+</html>

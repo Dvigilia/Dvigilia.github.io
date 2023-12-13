@@ -1,0 +1,79 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f70707;
+}
+
+.profile-container {
+    
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #b1c1f7;
+    box-shadow: 0 0 10px rgba(106, 108, 235, 0.1);
+    padding: 20px;
+    opacity: .5;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    border: 1px solid #0c0c0c;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+h1 {
+    margin: 500px;
+}
+
+p {
+    margin: 100px;
+    color: #666;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project-section a {
+    display: block;
+    text-decoration: none;
+    color: #94aae7;
+    background-color: #007BFF;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project-section a:hover {
+    background-color: #0056b3;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card a:hover {
+    background-color: #e20b0b;
+}

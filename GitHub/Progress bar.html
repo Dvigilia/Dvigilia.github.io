@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Bootstrap Progress Bar</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(Band.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;   
+        }
+    </style>
+    <h1>22-6108-971 Dale Viglia</h1>
+    <a href ="Portfolio.html">HomePage</a>
+    <div class="container mt-5">
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        </div>
+        <div class="mt-3">
+            <button class="btn btn-primary" onclick="setProgressBar(33)">Step 1 (33%)</button>
+            <button class="btn btn-success" onclick="setProgressBar(66)">Step 2 (66%)</button>
+            <button class="btn btn-danger" onclick="setProgressBar(100)">Step 3 (100%)</button>
+        </div>
+    </div>
+
+    <script>
+        function setProgressBar(width) {
+            const progressBar = document.getElementById("progress-bar");
+            progressBar.style.width = width + "%";
+            progressBar.setAttribute("aria-valuenow", width);
+            progressBar.innerHTML = width + "%";
+        }
+    </script>
+</body>
+</html>
